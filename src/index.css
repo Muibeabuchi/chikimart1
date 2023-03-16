@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    html{
+        
+    }
+
+    :root {
+        --card-bg-01: 253 239 230;
+        --card-bg-02: 214 229 251;
+        --card-bg-03: 206 235 233;
+        --card-bg-04: 226 242 178;
+        --primary-color: 10 29 55;
+        --hero-bg: 214 229 251;
+        /* --heading-fontSize: 2rem; */
+        --small-text-color:  153 153 153;
+        --heading-text-color: 10 29 55;
+    }
+
+    body{
+        @apply !font-display;
+    }
+
+    *{
+        /* padding: 0 !important; */
+        /* margin: 0 !important; */
+        box-sizing: border-box !important;
+    }
+}
+
+.link{
+    color: unset;
+    text-decoration: none;
+}
+
+section{
+    padding: 60px 0 !important;
+}
+
+.active{
+    font-weight: 700;
+}
+
+.link:hover{
+    color: inherit !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+h1,
+h2 {
+  font-size: 2rem !important;
+}
+
+p {
+    color: #999;
+    font-size: 1rem;
+  }
