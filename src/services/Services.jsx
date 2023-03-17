@@ -5,7 +5,7 @@ import ServiceCard from '../components/UI/ServiceCard';
 
 function Services() {
   return (
-    <section className='services'>
+    <section className='services small:!py-[20px]'>
         <Container>
             <Row>
                 {

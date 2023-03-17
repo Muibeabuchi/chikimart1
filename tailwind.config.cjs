@@ -17,6 +17,11 @@ module.exports = {
       stc:'rgb(var(--small-text-color) / <alpha-value>)',
       htc:'rgb(var(--heading-text-color) / <alpha-value>)',
     },
+    screens:{
+      'small':{'max':'576px'},
+      'tablet':{'max':'768px'},
+      'laptop':{'max':'992px'},
+    },
     extend: {
 
     },
