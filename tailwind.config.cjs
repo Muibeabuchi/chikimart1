@@ -23,7 +23,9 @@ module.exports = {
       'laptop':{'max':'992px'},
     },
     extend: {
-
+        backgroundImage:{
+          'common-section':"url('/assets/images/eco-logo.png')"
+        }
     },
     fontFamily:{
       'display':['Poppins','sans-serif'],

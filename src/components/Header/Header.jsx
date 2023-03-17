@@ -8,7 +8,11 @@ import { motion } from 'framer-motion';
 import Logo from '../../assets/images/chiki-logo-dark.png';
 import userIcon from '../../assets/images/user-icon.png';
 
+import { useSelector } from 'react-redux';
+
 function Header() {
+
+  const totalQuantity = useSelector((state)=> state.cart.totalQuantity);
 
   const navLink =[
     {
@@ -76,7 +80,7 @@ function Header() {
           <div className="nav__icons flex gap-x-5 items-center -mb-[0.6rem] ">
             <span className='relative'>
               <i className="ri-shopping-bag-line text-[1.4rem] cursor-pointer tablet:text-[1.2rem]"></i>
-              <span className="badge z-[10] absolute !bg-primary !rounded-full top-[20%] -right-[5px] !text-[9px] text-white ">3</span>
+              <span className="badge z-[10] absolute !bg-primary !rounded-full top-[20%] -right-[5px] !text-[9px] text-white ">{totalQuantity}</span>
             </span>
             <span className='relative'>
               <i className="ri-heart-line text-[1.4rem] cursor-pointer tablet:text-[1.2rem]"></i>

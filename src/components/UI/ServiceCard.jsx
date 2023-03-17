@@ -2,7 +2,7 @@ import { Col } from "reactstrap"
 import { motion } from "framer-motion";
 
 function ServiceCard({bg,icon,title,subtitle,}) {
-    console.log(bg);
+    // console.log(bg);
   return (
     <Col lg='3' md='4' sm='6' >
         <motion.div whileHover={{scale:1.1}} className={`service__item tablet:!mb-[.8rem] mb-3  cursor-pointer laptop:p-[10px] p-[20px] !bg-[#d6e5fb] flex items-center gap-x-[0.7rem] rounded-[5px]`}>
