@@ -48,7 +48,7 @@ function HomePage() {
                 <p className="hero__subtitle !text-primary font-medium tablet:!text-[.9rem]">Trending Products in {year}</p>
                 <h2 className='laptop:!text-[2rem] tablet:!text-[1.6rem] !text-primary !text-[2.5rem] font-semibold !my-[20px] mx-[0px] leading-none'>Make Your Interior More Minimalistic & Modern</h2>
                 <p  className='!text-primary leading-[28px] tablet:!text-[.9rem]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id voluptates illum libero doloremque ab! Veritatis.</p>
-                <motion.button whileTap={{scale:1.2}} className='buy__btn tablet:text-[.9rem] py-[8px] px-[20px] rounded-[5px] !bg-primary text-white cursor-pointer text-base mt-[40px]'><Link to='/shop'className='link'> SHOP NOW </Link></motion.button>
+                <motion.button whileTap={{scale:1.1}} className='buy__btn tablet:text-[.9rem] py-[8px] px-[20px] rounded-[5px] !bg-primary text-white cursor-pointer text-base mt-[40px]'><Link to='/shop'className='link'> SHOP NOW </Link></motion.button>
               </div>
             </Col>
 

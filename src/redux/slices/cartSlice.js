@@ -39,10 +39,19 @@ const cartSlice = createSlice({
             // console.log(state.totalQuantity);
             // console.log(newItem);
             // console.log(state);
+        },
+        deleteItem:(state,{payload})=>{
+            const existingItem = state.cartItems.find(item => item.id == payload);
+            state.totalQuantity = state.totalQuantity - existingItem.quantity;
+
+            if(existingItem){
+            state.cartItems = state.cartItems.filter(item => item.id !== payload);
+            state.totalAmount = state.cartItems.reduce((accumulator,item)=> accumulator + (item.price * item.quantity),0 ); 
+                }
         }
     }
 })
 
 
 export default cartSlice.reducer;
-export const {addItem} = cartSlice.actions;
+export const {addItem,deleteItem} = cartSlice.actions;

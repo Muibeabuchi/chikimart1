@@ -53,9 +53,9 @@ function ShopPage() {
       <section>
         <Container>
           <Row>
-            <Col lg='3' md='3' >
+            <Col lg='3' md='6' className="mb-3">
               <div className="filter__widget">
-                <select  className="py-[10px] px-[20px] border-[1px] border-solid !border-primary cursor-pointer rounded-[5px] text-white hover:outline-none !bg-primary" onChange={handleFilter}>
+                <select  className="py-[10px] px-[20px] tablet:!py-[7px] tablet:!px-[20px] !text-[.9rem] border-[1px] border-solid !border-primary cursor-pointer rounded-[5px] text-white hover:outline-none !bg-primary" onChange={handleFilter}>
                   <option className="text-[.9rem]">Filter By Category</option>
                   <option value="sofa" className="text-[.9rem]">Sofa</option>
                   <option value="mobile" className="text-[.9rem]">Mobile</option>
@@ -65,14 +65,14 @@ function ShopPage() {
                 </select>
               </div>
             </Col>
-            <Col lg='3' md='3' >
-            <select className="py-[10px] px-[20px] rounded-[5px] text-white hover:outline-none !bg-primary border-[1px] border-solid !border-primary cursor-pointer" >
+            <Col lg='3' md='6' className="mb-3 text-end" >
+            <select className="py-[10px] px-[20px] tablet:!py-[7px] tablet:!px-[20px] !text-[.9rem] rounded-[5px] text-white hover:outline-none !bg-primary border-[1px] border-solid !border-primary cursor-pointer" >
                   <option >Sort By</option>
                   <option value="ascending" className="text-[.9rem]">Ascending</option>
                   <option value="descending" className="text-[.9rem]">Descending</option>
                 </select>
             </Col>
-            <Col lg='6' md='6' >
+            <Col lg='6' md='12' >
               <div className="search__box w-full flex items-center justify-between border-[1px] rounded-[5px] pr-[12px] pl-[2px] !border-primary border-solid">
                 <input type="text" placeholder="Search..."  onChange={handleSearch} className="w-full border-none outline-none py-[8px] px-[10px]" />
                 <span className="!text-primary"><i className="ri-search-line"></i></span>
